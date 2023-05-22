@@ -127,3 +127,7 @@
     filter: invert(1);
   }
 }
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
