@@ -1,7 +1,14 @@
 .container {
   padding: 0 2rem;
 }
-
+.darkTheme{
+  background-color: rgba(1, 8, 29, 0.993);
+  color: white;
+}
+.home{
+  width: 100vw;
+  height: 90vh;
+}
 .main {
   min-height: 100vh;
   padding: 4rem 0;

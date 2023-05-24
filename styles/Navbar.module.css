@@ -6,6 +6,10 @@
     width: 100vw;
     height: 60px;
 }
+.darkTheme{
+    background-color: rgba(1, 8, 29, 0.993);
+    color: white;
+}
 .title{
     margin-left: 20px;
     font-weight: 700;

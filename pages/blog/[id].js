@@ -1,3 +1,6 @@
+import styles from "../../styles/Home.module.css"
+import { useSelector } from 'react-redux';
+
 
 // getStaticProps is used to define a list of paths generated Statically.
 export async function getStaticPaths() {
@@ -43,8 +46,9 @@ export const getStaticProps = async (context) => {
 };
 
 const Id = ({ result }) => {
+  const mode = useSelector((state) => state.DarkModeReducer);
   return (
-    <div className="text-center m-3 flex justify-center items-center flex-col">
+    <div className={`text-center p-3 flex justify-center items-center flex-col ${mode?styles.darkTheme:""} ${styles.home}`}>
       <img src={result.image} className="h-48 self-center" />
       <h1
         className="text-2xl fon
